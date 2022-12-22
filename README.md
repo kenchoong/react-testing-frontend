@@ -29,3 +29,7 @@ src
 ## Answer to the questions 
 
 [The answer](code-question/question.md)
+
+## The PR
+
+[All pr](https://github.com/kenchoong/react-testing-frontend/pulls?q=is%3Apr+is%3Aclosed)
