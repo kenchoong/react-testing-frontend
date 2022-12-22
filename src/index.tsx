@@ -1,15 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ApiProvider } from "@reduxjs/toolkit/dist/query/react";
+import { api } from "./app/services/github";
+import { SearchContextProvider } from "./context/useSearch";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <ApiProvider api={api}>
+      <SearchContextProvider>
+        <App />
+      </SearchContextProvider>
+    </ApiProvider>
   </React.StrictMode>
 );
 
