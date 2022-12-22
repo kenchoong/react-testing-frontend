@@ -25,3 +25,7 @@ src
 - context (React custom hooks)
 - feature (Each feature 1 file here.)
 ```
+
+## Answer to the questions 
+
+[The answer](code-question/question.md)
